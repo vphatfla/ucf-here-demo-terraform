@@ -38,6 +38,13 @@ resource "aws_iam_policy" "lambda_policy" {
       ],
       "Effect": "Allow",
       "Resource": "*"
+    }, 
+    {
+      "Effect": "Allow",
+      "Action": [
+          "rekognition:*"
+      ],
+      "Resource": "*"
     }
   ]
 }
